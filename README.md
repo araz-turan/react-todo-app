@@ -33,4 +33,4 @@ npm run dev
 
 ## Live Demo
 
-https://amazing-todo-app.netlify.app
+https://qardashes-note-app.netlify.app/
