@@ -1,13 +1,4 @@
 .task {
-    // width: 100%;
-    // display: grid;
-    // grid-template-columns: repeat(auto-fit, minmax(20rem, 37rem));
-    // grid-column-gap: 2.5rem;
-    // grid-row-gap: 2rem;
-    // list-style: none;
-    // justify-content: center;
-    // align-items: center;
-    // padding: 2rem;
 
     @media screen and (max-width: $bp-small) {
         grid-template-columns: max-content;
@@ -47,29 +38,35 @@
     &__statuses {
 
         &-box {
-            margin-right: 0.5rem;
+            margin-right: 0.75rem;
             transform: translateY(0.3rem) scale(1.5);
 
+            @media screen and (max-width: $bp-small) {
+                transform: translateY(0.4rem) scale(1.4);
+            }
         }
-        
+
         &-name {
             margin-right: 1.5rem;
             font-size: 1.75rem;
             font-weight: 500;
         }
     }
-    
+
 }
 
 #todo {
     accent-color: grey;
 }
+
 #doing {
     accent-color: green;
 }
+
 #done {
     accent-color: $color-primary;
 }
+
 #canceled {
     accent-color: $color-danger;
 }
