@@ -33,7 +33,7 @@ html {
     }
 
     @media only screen and (max-width: $bp-small) {
-        font-size: 37.5%;
+        font-size: 45%;
     }
 }
 
@@ -66,7 +66,7 @@ body {
     .task-list {
         width: 100%;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(20rem, 37rem));
+        grid-template-columns: repeat(auto-fit, minmax(17rem, 42rem));
         grid-column-gap: 2.5rem;
         grid-row-gap: 2rem;
         list-style: none;

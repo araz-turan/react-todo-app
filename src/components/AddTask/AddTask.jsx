@@ -16,7 +16,7 @@ export default function AddTask({ onCreateTodo }) {
         <>
             <div className="add-task">
                 <input type="text" className='add-task__box' placeholder='Add Your Task' value={newTodoName} onChange={event => setNewTodoName(event.target.value)} />
-                <button className="btn add-task__success" onClick={() => createNewTodo(newTodoName)}>Confirm</button>
+                <button className="btn add-task__success" onClick={() => createNewTodo(newTodoName)}>Add</button>
                 <button className="btn add-task__danger" onClick={() => setNewTodoName('')}>Cancel</button>
             </div>
         </>
