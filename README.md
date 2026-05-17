@@ -30,3 +30,7 @@ npm run dev
 - Dark mode
 - Edit tasks
 - Drag & drop
+
+## Live Demo
+
+https://amazing-todo-app.netlify.app
