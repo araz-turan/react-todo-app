@@ -33,4 +33,4 @@ npm run dev
 
 ## Live Demo
 
-https://qardashes-note-app.netlify.app/
+https://qardash-todo-app.netlify.app/
