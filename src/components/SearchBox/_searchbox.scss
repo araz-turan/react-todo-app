@@ -1,0 +1,42 @@
+.search {
+    width: 100%;
+    max-width: 40rem;
+    background-color: $color-primary--2;
+    border: 0.2rem solid $color-secondary--1;
+    border-radius: 0.5rem;
+    display: grid;
+    grid-template-columns: 90% 10%;
+    align-items: center;
+    justify-content: space-between;
+
+    @media screen and (max-width: $bp-small) {
+        grid-template-columns: 85% 15%;
+        border: 0.3rem solid $color-secondary--1;
+    }
+
+    &__text-box {
+        width: 100%;
+        padding: 0.5rem 1rem;
+        outline: none;
+        border: none;
+        background-color: $color-primary--2;
+        color: $color-secondary--1;
+
+
+        &::placeholder {
+            font-size: 1.5rem;
+            color: $color-secondary--1;
+            font-style: italic;
+            opacity: 0.3;
+        }
+    }
+
+    &__btn {
+        color: $color-light;
+        background-color: $color-secondary--1;
+    }
+
+    &__btn>i {
+        font-size: 1.5rem;
+    }
+}

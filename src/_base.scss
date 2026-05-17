@@ -1,0 +1,77 @@
+// COLORs
+$color-primary--1: #1a1a2e;
+$color-primary--2: #eeeeee;
+$color-secondary--1: #16213e;
+$color-secondary--2: #a8a8b5;
+$color-light: #e8f0fe;
+$color-primary: #0984e3;
+$color-danger: #e84118;
+$color-success: #00b894;
+
+// FONTs
+$font-primary: 'Inter';
+$font-display: 'Poppins';
+
+// BREAKPOINTs
+$bp-medium: 50em;
+$bp-small: 37.5em;
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+    @media only screen and (max-width: $bp-medium) {
+        font-size: 50%;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        font-size: 37.5%;
+    }
+}
+
+body {
+    font-family: $font-primary;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.container {
+    height: 100vh;
+    background-color: $color-primary--1;
+}
+
+.header {
+    background-color: $color-secondary--2;
+    color: $color-secondary--1;
+    display: grid;
+    grid-template-columns: 30% 35% 30%;
+    grid-template-rows: 8rem;
+    grid-column-gap: 5%;
+    align-items: center;
+    justify-items: center;
+    padding: 0 1rem;
+}
+
+.main {
+    background-color: $color-primary--1;
+
+    .task-list {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 37rem));
+        grid-column-gap: 2.5rem;
+        grid-row-gap: 2rem;
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+    }
+}

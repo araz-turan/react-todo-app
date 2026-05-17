@@ -1,0 +1,44 @@
+.add-task {
+    display: grid;
+    grid-template-columns: 40% 12% 12%;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 0;
+
+    @media screen and (max-width: $bp-small) {
+        grid-template-columns: 40% 15% 15%;
+    }
+
+    &__box {
+        outline: 0;
+        border-radius: 0.5rem 0 0 0.5rem;
+        border: 0.2rem solid $color-secondary--2;
+        background-color: $color-primary--2;
+        padding: 0.75rem;
+        color: $color-secondary--1;
+        font-size: 2rem;
+        margin-right: 0.75rem;
+
+        &::placeholder {
+            color: $color-secondary--2;
+        }
+    }
+
+    &__success {
+        background-color: $color-success;
+        padding: 0.75rem;
+        font-size: 2rem;
+        border: 0.2rem solid $color-secondary--2;
+        border-right: 0;
+        color: $color-light;
+    }
+
+    &__danger {
+        background-color: $color-danger;
+        padding: 0.75rem;
+        font-size: 2rem;
+        border: 0.2rem solid $color-secondary--2;
+        border-radius: 0 0.5rem 0.5rem 0;
+        color: $color-light;
+    }
+}
